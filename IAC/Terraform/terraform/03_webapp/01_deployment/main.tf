@@ -4,7 +4,7 @@ data "terraform_remote_state" "l02_d01" {
     resource_group_name  = var.rs_resource_group_name
     storage_account_name = var.rs_storage_account_name
     container_name       = var.rs_container_name
-    key                  = "${var.env}/${var.var.rs_container_key}" #"02_sql/01_deployment"
+    key                  = "${var.env}/${var.rs_container_key}" #"02_sql/01_deployment"
   }
 }
 
